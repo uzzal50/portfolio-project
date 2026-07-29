@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { AboutSection } from './components/AboutSection'
 import { ContactSection } from './components/ContactSection'
 import { ExperienceSection } from './components/ExperienceSection'
+import { Header } from './components/Header'
 import { HeroSection } from './components/HeroSection'
 import { HobbiesSection } from './components/HobbiesSection'
 import { SkillsSection } from './components/SkillsSection'
@@ -39,39 +39,13 @@ export default function Portfolio() {
   return (
     <div className='site-shell'>
       <div className='grain' />
-      <header className='topbar'>
-        <a
-          className='monogram'
-          href='#home'
-          onClick={e => {
-            e.preventDefault()
-            goTo('home')
-          }}
-        >
-          UM<span>.</span>
-        </a>
-        <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
-          {navItems.map(item => (
-            <button
-              className={active === item ? 'active' : ''}
-              key={item}
-              onClick={() => goTo(item)}
-            >
-              {item}
-            </button>
-          ))}
-        </nav>
-        <a className='top-contact' href='mailto:ujolmaharjan94@gmail.com'>
-          Let's talk <ArrowUpRight size={15} />
-        </a>
-        <button
-          className='menu-button'
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label='Toggle navigation'
-        >
-          {menuOpen ? <X /> : <Menu />}
-        </button>
-      </header>
+      <Header
+        active={active}
+        goTo={goTo}
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        navItems={navItems}
+      />
 
       <main>
         <HeroSection goTo={goTo} />

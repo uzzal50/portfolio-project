@@ -12,11 +12,11 @@ import { SectionLabel } from './SectionLabel'
 const projects = [
   {
     name: 'Zite',
-    type: 'Case management',
+    type: 'data collection and task management',
     number: '01',
     image: zitePreview,
     description:
-      'A flexible field-data collection and case-management platform for development, humanitarian, and research teams.',
+      'Zite is a field data collection and management platform built for organizations working in development, humanitarian, and research sectors. It enables teams to design forms, collect data in the field, manage cases through configurable workflows, and generate reports — all from a single platform.',
     stack: ['React', 'Redux-Saga', 'MapLibre', 'Turborepo'],
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     number: '02',
     image: dvsPreview,
     description:
-      'A clear, insight-led dashboard for tracking development programmes and projects at the British Embassy Nepal.',
+      'The Data Visualisation System (DVS) is British Embassy Kathmandu BEK’s repository of data on the implementation of programmes and their components in Nepal. It provides decision-ready charts and reporting views for complex programme data.',
     stack: ['TypeScript', 'Recharts', 'MapLibre', 'Vite'],
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     number: '03',
     image: sjpPreview,
     description:
-      'A GIS platform helping local governments plan and respond to Gender-Based Violence using evidence from the ground.',
+      'The SJP Web-GIS Dashboard Platform is an interactive Web-GIS that supports evidence-based planning for Gender-Based Violence (GBV) prevention and response by visualising hotspots, services, and key insights through interactive maps and dashboards',
     stack: ['React', 'Zustand', 'Turf', 'Mapbox'],
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     number: '04',
     image: dfimsPreview,
     description:
-      'Dashboards, maps, profiles, and custom reports for managing and monitoring development finance in Nepal.',
+      "Nepal's DFIMS is an online system that supports the tracking and recording of development activities, results across various flows, and associated financial information",
     stack: ['TypeScript', 'Redux Toolkit', 'Recharts', 'MapLibre GL'],
   },
   {
@@ -123,7 +123,6 @@ export function WorkSection({ expanded, setExpanded }) {
                   coming soon
                 </span>
               )}
-              <b>{project.number}</b>
             </div>
             <div className='professional-project-copy'>
               <span className='project-type'>{project.type}</span>
@@ -136,7 +135,7 @@ export function WorkSection({ expanded, setExpanded }) {
               </div>
               <button
                 aria-label={`Read more about ${project.name}`}
-                className='project-detail'
+                className='project-detail hover:text-primary'
               >
                 Project details <ArrowDownRight size={16} />
               </button>
@@ -144,9 +143,7 @@ export function WorkSection({ expanded, setExpanded }) {
           </article>
         ))}
       </div>
-      <p className='project-note'>
-        Professional project visuals will appear here as you add them.
-      </p>
+
       <div className='personal-work-heading'>
         <p className='project-category'>Personal projects</p>
         <p>

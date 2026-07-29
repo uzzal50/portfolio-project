@@ -21,10 +21,10 @@ export function ContactSection() {
         <em>remarkable.</em>
       </h2>
       <a href='mailto:ujolmaharjan94@gmail.com' className='contact-email'>
-        ujolmaharjan94@gmail.com <ArrowUpRight size={27} />
+        Let's Talk <ArrowUpRight size={27} />
       </a>
       <div className='contact-footer'>
-        <span>Bholdhoka, Lalitpur · Nepal</span>
+        <span>Bholdhoka, Balkumari Lalitpur · Nepal</span>
         <div>
           <a
             href='https://www.linkedin.com/in/uzzwal-maharjan-26a806118/'

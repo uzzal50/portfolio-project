@@ -38,9 +38,9 @@ const hobbies = [
     'https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80',
   ],
   ['Novels', BookOpen, 'For a new perspective', novelImage],
-  ['Traveling', Plane, 'For the next horizon', travelImage],
-  ['Cycling', Bike, 'For the open road', cyclingImage],
-  ['Formula 1', FlagTriangleRight, 'For race-day energy', f1Image],
+  // ['Traveling', Plane, 'For the next horizon', travelImage],
+  // ['Cycling', Bike, 'For the open road', cyclingImage],
+  // ['Formula 1', FlagTriangleRight, 'For race-day energy', f1Image],
 ]
 
 export function HobbiesSection() {
