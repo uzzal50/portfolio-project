@@ -8,7 +8,7 @@ import { HobbiesSection } from './components/HobbiesSection'
 import { SkillsSection } from './components/SkillsSection'
 import { WorkSection } from './components/WorkSection'
 
-const navItems = ['about', 'work', 'experience', 'hobbies', 'contact']
+const navItems = ['about', 'work', 'experience', 'hobbies', 'contact', 'cv']
 
 export default function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false)
